@@ -73,6 +73,10 @@ box-shadow: -1px -7px 8px 0px rgba(34, 60, 80, 0.2);
     border-radius: 2.25rem;
 }
 
+.row-form-errors{
+    color: red;
+}
+
 .info-item{
     text-decoration-line: none;
     margin-top: 60px;
