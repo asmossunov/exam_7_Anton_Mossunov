@@ -2,7 +2,6 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 
 from book.models import Record, StatusChoices
-
 from book.forms import RecordForm, FindForm
 
 
@@ -21,10 +20,6 @@ def index_view(request):
 
 
 def add_record_view(request):
-    form = RecordForm()
-    if request.method == 'GET':
-        context = {'form': form}
-        return render(request, 'add_record.html', context)
     form = RecordForm(request.POST)
     if not form.is_valid():
         return redirect('index')
@@ -65,18 +60,28 @@ def confirm_delete(request, pk):
         status=StatusChoices.Неактивно)
     return redirect('index')
 
+
 def find_view(request):
     if request.POST.get('author_name'):
         author_name = request.POST.get('author_name')
-        print(author_name)
         records = Record.objects.filter(author_name=author_name)
-        print(records)
-        form = RecordForm()
-        find_form = FindForm()
-        context = {
-            'records': records,
-            'choices': StatusChoices.choices,
-            'find_form': find_form,
-            'form': form
-        }
+        if records:
+            form = RecordForm()
+            find_form = FindForm()
+            context = {
+                'records': records,
+                'choices': StatusChoices.choices,
+                'find_form': find_form,
+                'form': form
+            }
+            return render(request, 'index.html', context)
+        else:
+            form = RecordForm()
+            find_form = FindForm()
+            context = {
+                'answer': 'Записи этого автора не найдены!',
+                'choices': StatusChoices.choices,
+                'find_form': find_form,
+                'form': form
+            }
         return render(request, 'index.html', context)
