@@ -9,9 +9,11 @@ from book.forms import RecordForm
 def index_view(request):
     if request.method == 'GET':
         records = Record.objects.all().order_by('-created_at')
+        form = RecordForm()
         context = {
             'records': records,
-            'choices': StatusChoices.choices
+            'choices': StatusChoices.choices,
+            'form': form
         }
         return render(request, 'index.html', context)
 
@@ -48,4 +50,18 @@ def edit_record_view(request, pk):
         }
         return render(request, 'edit_record.html', context)
     record = Record.objects.filter(pk=pk).update(**form.cleaned_data)
+    return redirect('index')
+
+
+def delete_view(request, pk):
+    record = get_object_or_404(Record, pk=pk)
+    context = {
+        'record': record
+    }
+    return render(request, 'delete_confirm.html', context)
+
+
+def confirm_delete(request, pk):
+    Record.objects.filter(pk=pk).update(
+        status=StatusChoices.Неактивно)
     return redirect('index')
