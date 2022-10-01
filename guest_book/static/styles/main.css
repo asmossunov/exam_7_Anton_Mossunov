@@ -12,7 +12,7 @@
 }
 
 .row{
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 .card-title{
@@ -58,7 +58,7 @@ box-shadow: -1px -7px 8px 0px rgba(34, 60, 80, 0.2);
     border-radius: 10px;
 }
 .box{
-    width: 700px;
+    width: 600px;
     margin: auto auto 50px;
     background-color: white;
     border-radius: 20px;
@@ -66,19 +66,16 @@ box-shadow: -1px -7px 8px 0px rgba(34, 60, 80, 0.2);
     -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
-
+.form-label{
+    font-size: 25px;
+    font-weight: bold;
+}
 .col-5{
     margin-top: 25px;
 }
 .main-title-home{
-	background: #2b3f44;
-	background: -webkit-linear-gradient(to bottom, #2b3f44 28%, #6da8b8 70%);
-	background: -moz-linear-gradient(to bottom, #2b3f44 28%, #6da8b8 70%);
-	background: linear-gradient(to bottom, #2b3f44 28%, #6da8b8 70%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	padding-top: 50px;
-    margin-top: 130px;
+    padding-top: 25px;
+    margin-top: 10px;
     font-size: 40px;
 }
 .text{
@@ -119,8 +116,8 @@ box-shadow: -1px -7px 8px 0px rgba(34, 60, 80, 0.2);
 
 .btn{
     font-size: 25px;
-    margin-top: 30px;
-    margin-bottom: 60px;
+
+    margin-bottom: 30px;
     padding: 0.7rem 2.5rem;
     border-radius: 2.25rem;
 }
@@ -216,7 +213,9 @@ box-shadow: -1px -7px 8px 0px rgba(34, 60, 80, 0.2);
     color: #6c6c6c;
 }
 
-
+.a{
+    font-size: 30px;
+}
 
 
 body {
@@ -226,7 +225,7 @@ body {
 
 .navbar {
     display: block;
-    background: #0272bc;
+    background: #532e28;
     position: fixed;
     top: 0;
     right: 0;

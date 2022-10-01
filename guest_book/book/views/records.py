@@ -3,16 +3,18 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 from book.models import Record, StatusChoices
 
-from book.forms import RecordForm
+from book.forms import RecordForm, FindForm
 
 
 def index_view(request):
     if request.method == 'GET':
-        records = Record.objects.all().order_by('-created_at')
+        records = Record.objects.filter(status='ACTIVE').order_by('-created_at')
         form = RecordForm()
+        find_form = FindForm()
         context = {
             'records': records,
             'choices': StatusChoices.choices,
+            'find_form': find_form,
             'form': form
         }
         return render(request, 'index.html', context)
@@ -25,10 +27,7 @@ def add_record_view(request):
         return render(request, 'add_record.html', context)
     form = RecordForm(request.POST)
     if not form.is_valid():
-        context = {
-            'form': form
-        }
-        return render(request, 'add_record.html', context)
+        return redirect('index')
     record = Record.objects.create(**form.cleaned_data)
     return redirect('index')
 
@@ -65,3 +64,19 @@ def confirm_delete(request, pk):
     Record.objects.filter(pk=pk).update(
         status=StatusChoices.Неактивно)
     return redirect('index')
+
+def find_view(request):
+    if request.POST.get('author_name'):
+        author_name = request.POST.get('author_name')
+        print(author_name)
+        records = Record.objects.filter(author_name=author_name)
+        print(records)
+        form = RecordForm()
+        find_form = FindForm()
+        context = {
+            'records': records,
+            'choices': StatusChoices.choices,
+            'find_form': find_form,
+            'form': form
+        }
+        return render(request, 'index.html', context)
