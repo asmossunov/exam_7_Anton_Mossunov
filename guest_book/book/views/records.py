@@ -29,3 +29,23 @@ def add_record_view(request):
         return render(request, 'add_record.html', context)
     record = Record.objects.create(**form.cleaned_data)
     return redirect('index')
+
+
+def edit_record_view(request, pk):
+    record = get_object_or_404(Record, pk=pk)
+    if request.method == 'GET':
+        form = RecordForm(initial={
+            'author_name': record.author_name,
+            'author_email': record.author_email,
+            'text': record.text,
+        })
+        return render(request, 'edit_record.html', context={'form': form, 'record': record})
+    form = RecordForm(request.POST)
+    if not form.is_valid():
+        context = {
+            'form': form,
+            'record': record
+        }
+        return render(request, 'edit_record.html', context)
+    record = Record.objects.filter(pk=pk).update(**form.cleaned_data)
+    return redirect('index')

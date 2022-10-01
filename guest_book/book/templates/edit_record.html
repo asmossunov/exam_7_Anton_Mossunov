@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+    Product edit
+{% endblock %}
+{% block content %}
+    <form action="{% url 'record_edit' record.pk %}" method="POST">
+        {% csrf_token %}
+
+        <div class="form">
+            {% include 'partials/record_form.html' with main_title='Редактировать запись' button_text='Сохранить' %}
+        </div>
+
+    </form>
+{% endblock %}
