@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, get_object_or_404
 
 
 from book.models import Record, StatusChoices
+
 from book.forms import RecordForm, FindForm
 
 
@@ -22,7 +23,15 @@ def index_view(request):
 def add_record_view(request):
     form = RecordForm(request.POST)
     if not form.is_valid():
-        return redirect('index')
+        records = Record.objects.filter(status='ACTIVE').order_by('-created_at')
+        find_form = FindForm()
+        context = {
+            'records': records,
+            'choices': StatusChoices.choices,
+            'find_form': find_form,
+            'form': form
+        }
+        return render(request, 'index.html', context)
     record = Record.objects.create(**form.cleaned_data)
     return redirect('index')
 
@@ -79,7 +88,7 @@ def find_view(request):
             form = RecordForm()
             find_form = FindForm()
             context = {
-                'answer': 'Записи этого автора не найдены!',
+                'answer': 'записи этого автора не найдены!',
                 'choices': StatusChoices.choices,
                 'find_form': find_form,
                 'form': form
