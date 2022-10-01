@@ -1,0 +1,596 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-10-01T05:52:11.354Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "John Dow example@gmail.com Я прекрасно провёл время в вашем гостевом доме. Всё было отлично. Сервис на высшем уровне! 2022-10-01 05:52:11.354092+00:00 2022-10-01 05:52:11.354129+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-10-01T05:54:51.418Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "Jack Monson example@gmail.com Это было прекрасное время 2022-10-01 05:54:51.417866+00:00 2022-10-01 05:54:51.417916+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-10-01T05:55:21.438Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "John Dow example@gmail.com Я прекрасно провёл время в вашем гостевом доме. Всё было отлично. Сервис на высшем уровне! 2022-10-01 05:52:11.354092+00:00 2022-10-01 05:52:11.354129+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-10-01T05:55:35.363Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "John Dow example@gmail.com Я прекрасно провёл время в вашем гостевом доме. Всё было отлично. Сервис на высшем уровне! 2022-10-01 05:55:35.362878+00:00 2022-10-01 05:55:35.362908+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-10-01T05:56:36.202Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "4",
+    "object_repr": "Jane Anderson example@gmail.com Сервис на высшем уровне! 2022-10-01 05:56:36.201735+00:00 2022-10-01 05:56:36.201772+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-10-01T05:57:55.386Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "5",
+    "object_repr": "Jill Backer example@gmail.com Номера очень комфортные и чистые 2022-10-01 05:57:55.386149+00:00 2022-10-01 05:57:55.386175+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-10-01T05:58:36.806Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "6",
+    "object_repr": "Ben Gate example@gmail.com Соседи очень тихие. Персонал ответственный 2022-10-01 05:58:36.805307+00:00 2022-10-01 05:58:36.805343+00:00",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-10-01T12:16:08.209Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "14",
+    "object_repr": "Jane Bosson example@gmail.co sd 2022-10-01 11:16:08.995928+00:00 2022-10-01 11:16:08.995972+00:00",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add record",
+    "content_type": 7,
+    "codename": "add_record"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change record",
+    "content_type": 7,
+    "codename": "change_record"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete record",
+    "content_type": 7,
+    "codename": "delete_record"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view record",
+    "content_type": 7,
+    "codename": "view_record"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$260000$QET4yxJJSLZJiNgZqsOJe5$XTOqhTGvTzzdYvJtrcz9o3dCY3Q+KMJrw0Q9CKVyELA=",
+    "last_login": "2022-10-01T05:39:10.900Z",
+    "is_superuser": true,
+    "username": "root",
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-01T05:38:31.183Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "book",
+    "model": "record"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "ma5lp95b7bndjt125lpe86yiahtv46aw",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAUBf-FtSFQXuLSfb-B3AdI1dCktCvjv2uTLnR7Zua8RIJtrWnreUkTi4vQ4vS7IdAjtx3wHdptljS3dZlQ7oo8aJfjzPl5Pdy_gwq9fmvDg6FgAS1zBOsKKQoGuVAmJnUO7EtE1tkWowg5eg0-KIjKDcHZIN4fGVw4vQ:1oeVDS:IAJPhJMwm1NKqLm0FNbIt1T96xE1UjJ4ZxmndxHky2I",
+    "expire_date": "2022-10-15T05:39:10.904Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 2,
+  "fields": {
+    "author_name": "Jack Monson",
+    "author_email": "example@gmail.com",
+    "text": "Это было прекрасное время",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T05:54:51.417Z",
+    "changed_at": "2022-10-01T05:54:51.417Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 3,
+  "fields": {
+    "author_name": "John Dow",
+    "author_email": "example@gmail.com",
+    "text": "Я прекрасно провёл время в вашем гостевом доме. Всё было отлично. Сервис на высшем уровне!",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T05:55:35.362Z",
+    "changed_at": "2022-10-01T05:55:35.362Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 4,
+  "fields": {
+    "author_name": "Jane Anderson",
+    "author_email": "example@gmail.com",
+    "text": "Сервис на высшем уровне!",
+    "status": "BLOCKED",
+    "created_at": "2022-10-01T05:56:36.201Z",
+    "changed_at": "2022-10-01T05:56:36.201Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 5,
+  "fields": {
+    "author_name": "Jill Backer",
+    "author_email": "example@gmail.com",
+    "text": "Номера очень комфортные и чистые",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T05:57:55.386Z",
+    "changed_at": "2022-10-01T05:57:55.386Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 6,
+  "fields": {
+    "author_name": "Ben Gate",
+    "author_email": "example@gmail.com",
+    "text": "Соседи очень тихие. Персонал ответственный",
+    "status": "BLOCKED",
+    "created_at": "2022-10-01T05:58:36.805Z",
+    "changed_at": "2022-10-01T05:58:36.805Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 7,
+  "fields": {
+    "author_name": "Lane Jacksoon",
+    "author_email": "example@gmail.com",
+    "text": "Это был потрясающий отдых! Спасибо персоналу за комфорт",
+    "status": "NOT_ACTIVE",
+    "created_at": "2022-10-01T07:33:13.889Z",
+    "changed_at": "2022-10-01T07:33:13.889Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 8,
+  "fields": {
+    "author_name": "Jane Bosson",
+    "author_email": "example@gmail.com",
+    "text": "Всё было отлично. Сервис на высшем уровне!",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T08:50:37.628Z",
+    "changed_at": "2022-10-01T08:50:37.628Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 9,
+  "fields": {
+    "author_name": "Jeff Monson",
+    "author_email": "example@gmail.com",
+    "text": "Its a great place!",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T10:11:11.910Z",
+    "changed_at": "2022-10-01T10:11:11.910Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 10,
+  "fields": {
+    "author_name": "John Dow",
+    "author_email": "example@gmail.com",
+    "text": "Рад был вновь отдохнуть в этом прекрасном доме отдыха!Спасибо всем!",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T10:17:24.846Z",
+    "changed_at": "2022-10-01T10:17:24.846Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 11,
+  "fields": {
+    "author_name": "Jane Bosson",
+    "author_email": "example@gmail.com",
+    "text": "Было просто супер",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T10:21:19.290Z",
+    "changed_at": "2022-10-01T10:21:19.290Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 12,
+  "fields": {
+    "author_name": "Jill Backer",
+    "author_email": "example@gmail.com",
+    "text": "Всё было отлично. Сервис на высшем уровне!",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T11:01:31.421Z",
+    "changed_at": "2022-10-01T11:01:31.421Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 13,
+  "fields": {
+    "author_name": "Jeff Monson",
+    "author_email": "example@gmail.com",
+    "text": "Всё было отлично. Сервис на высшем уровне!",
+    "status": "ACTIVE",
+    "created_at": "2022-10-01T11:13:47.266Z",
+    "changed_at": "2022-10-01T11:13:47.266Z"
+  }
+},
+{
+  "model": "book.record",
+  "pk": 15,
+  "fields": {
+    "author_name": "John Dow",
+    "author_email": "example@gmail.com",
+    "text": "dfbdfbdfbdf",
+    "status": "NOT_ACTIVE",
+    "created_at": "2022-10-01T11:56:28.855Z",
+    "changed_at": "2022-10-01T11:56:28.855Z"
+  }
+}
+]
