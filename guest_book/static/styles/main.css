@@ -16,7 +16,8 @@
 }
 
 .card-title{
-    font-size: 35px;
+    font-family: ;
+    font-size: 25px;
     color: #3f636c;
 }
 
@@ -42,6 +43,13 @@
     height: 400px;
 }
 
+.card-body{
+    border-radius: 8px;
+    -webkit-box-shadow: -1px -7px 8px 0px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: -1px -7px 8px 0px rgba(34, 60, 80, 0.2);
+box-shadow: -1px -7px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
 .card_desc{
     margin-top: 50px;
 }
@@ -50,7 +58,7 @@
     border-radius: 10px;
 }
 .box{
-    width: 1100px;
+    width: 700px;
     margin: auto auto 50px;
     background-color: white;
     border-radius: 20px;
@@ -59,7 +67,9 @@
     box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
-
+.col-5{
+    margin-top: 25px;
+}
 .main-title-home{
 	background: #2b3f44;
 	background: -webkit-linear-gradient(to bottom, #2b3f44 28%, #6da8b8 70%);
@@ -69,7 +79,7 @@
 	-webkit-text-fill-color: transparent;
 	padding-top: 50px;
     margin-top: 130px;
-    font-size: 100px;
+    font-size: 40px;
 }
 .text{
     /*-webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);*/

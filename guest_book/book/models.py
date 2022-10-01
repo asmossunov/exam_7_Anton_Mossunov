@@ -5,6 +5,7 @@ from django.db.models import TextChoices
 class StatusChoices(TextChoices):
     Активно = 'ACTIVE'
     Заблокировано = 'BLOCKED'
+    Неактивно = 'NOT_ACTIVE'
 
 
 class Record(models.Model):
